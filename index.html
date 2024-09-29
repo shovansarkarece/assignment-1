@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Digital User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+        label {
+            display: inline-block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="file"],
+        input[type="color"],
+        input[type="url"],
+        input[type="datetime-local"] {
+            width: 30%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="color"]{
+            width: 10%;
+        }
+
+        .checkbox-group,
+        .radio-group {
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #34a853;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2c8b47;
+        }
+        .flag {
+            vertical-align: middle;
+            margin-left:-8px;
+        }   
+    </style>
+</head>
+<body>
+
+    <h1>Bangladesh Digital User Registration <img src="./2024-09-29 22_08_25-images.jpg" alt="Bangladesh Flag" width="60" class="flag"></h1>
+
+    <form>
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="fullname">Full Name: <span style="color:red;">*</span></label>
+            <input type="text" id="fullname" name="fullname" required><br>
+
+            <label for="email">Email Address: <span style="color:red;">*</span></label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="+8801XXXXXXXXX"><br>
+
+            <label for="nid">National ID Number (NID): <span style="color:red;">*</span></label>
+            <input type="text" id="nid" name="nid" required><br>
+
+            <label for="profile-pic">Upload Profile Picture:</label>
+            <input type="file" id="profile-pic" name="profile-pic"><br>
+        </fieldset>
+
+        <!-- Preferences and Additional Info -->
+        <fieldset>
+            <legend>Preferences and Additional Info</legend>
+
+            <label for="color">Select Your Favorite Color:</label>
+            <input type="color" id="color" name="color" value="#000000"><br>
+
+            <label for="website">Your Website:</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com"><br>
+
+            <label for="appointment">Select Appointment Date and Time:</label>
+            <input type="datetime-local" id="appointment" name="appointment"><br>
+        </fieldset>
+
+        <!-- Interests -->
+        <fieldset>
+            <legend>Interests (Multiple Choice)</legend>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interests" value="Technology"> Technology</label><br>
+                <label><input type="checkbox" name="interests" value="Sports"> Sports</label><br>
+                <label><input type="checkbox" name="interests" value="Music"> Music</label><br>
+                <label><input type="checkbox" name="interests" value="Travel"> Travel</label><br>
+                <label><input type="checkbox" name="interests" value="Food"> Food</label><br>
+            </div>
+        </fieldset>
+
+        <!-- Preferred Communication Method -->
+        <fieldset>
+            <legend>Preferred Communication Method (Single Choice)</legend>
+            <div class="radio-group">
+                <label><input type="radio" name="communication" value="Email"> Email</label><br>
+                <label><input type="radio" name="communication" value="Phone"> Phone</label><br>
+                <label><input type="radio" name="communication" value="SMS"> SMS</label><br>
+            </div>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
